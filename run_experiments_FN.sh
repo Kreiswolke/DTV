@@ -14,8 +14,10 @@ do
     for i in "${ntopics[@]}"
     do
 	if [ "$year" == "2006" ]
+	  # Random topic intiialization
 	  then 
               python /home/oliver/Desktop/RandomTopicsScripts/run_STV_dynamic.py --savedir "$SAVEDIR/$year" --t $i --lr 0.01 --gamma 0.99 --maxiter 10000 --miniter 50 --bs 500 --case "FN_$year" 
+	  # Initialization from previous run 
 	  else
 	      python /home/oliver/Desktop/RandomTopicsScripts/run_STV_dynamic.py --savedir "$SAVEDIR/$year" --t $i --lr 0.01 --gamma 0.99 --maxiter 10000  --miniter 50 --bs 500 --case "FN_$year"  --weight "$SAVEDIR/$last_year/t2v/res_n_$i.p"
 	fi

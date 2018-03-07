@@ -5,9 +5,9 @@ Code to reproduce the results from experiments on the Financial-News dataset fro
 # Requirements
 Code requires a gensim-compatible version of GloVe embeddings which can be obtained by calling:
 
-`./models/download_glove_model.sh`
+`./models/download_data.sh`
 
-Pre-processed document embeddings are included in /data/FinancialNews/
+Pre-processed document embeddings are included in /data/FinancialNews/ and the gensim-usable GloVe model is stored at /models/glove2word2vec300d.txt.
 
 # Experiments
 

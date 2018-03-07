@@ -17,7 +17,7 @@ import gensim
 
     
 '''------------Word Embeddings---------------'''
-word_model = gensim.models.Word2Vec.load_word2vec_format('/home/oliver/GloVe/glove2word2vec300d.txt')
+word_model = gensim.models.Word2Vec.load_word2vec_format('/models/glove2word2vec300d.txt')
 
 
 '''------------Methods---------------'''
